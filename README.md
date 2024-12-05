@@ -1,7 +1,9 @@
 ChatGPT History Exporter
+
 A Python script to export your ChatGPT conversation history for backup or sharing purposes.
 
 Features
+
 Automatically navigates your ChatGPT history.
 Extracts unique conversations and saves them to a text file.
 Works with undetected-chromedriver to bypass detection mechanisms.
