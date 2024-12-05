@@ -1,16 +1,18 @@
 
 # ChatGPT Chat History Extractor
 
-This Python script uses [undetected_chromedriver](https://github.com/ultrafunkamsterdam/undetected-chromedriver) and [Selenium](https://www.selenium.dev/) to automatically extract and save your ChatGPT conversation history to a text file.
+I made o1 write this readme so just like, figure it out. Just slap it in a Jupyter notebook.
+
+This Python script uses [undetected_chromedriver](https://github.com/ultrafunkamsterdam/undetected-chromedriver) and [Selenium](https://www.selenium.dev/) to automatically extract and save your ChatGPT conversation history to a text file. Is it janky and slow? Yes. Does it work? Also kinda yes.
 
 ## How It Works
 
 1. The script launches an undetected Chrome browser session and navigates to the ChatGPT website.
-2. You manually log into ChatGPT and open your chat history page.
-3. Once you press Enter in the terminal, the script will:
+2. You manually log into ChatGPT and navigate to the homepage, ensuring that the sidebar with chat history is open.
+3. Once you press Enter in the terminal/notebook to confirm that you've logged in, the script will:
     - Identify all chat history links available on the page.
-    - Open each chat and scrape the conversation text.
-    - Write all conversations to a single text file (`chatgpt_chat_history.txt`).
+    - Sequentially open each chat and scrape the conversation text.
+    - Write all conversations to a single text file (`chatgpt_chat_history.txt`) in C:\Users
 
 ## Requirements
 
@@ -28,18 +30,12 @@ This Python script uses [undetected_chromedriver](https://github.com/ultrafunkam
 
 ## Usage
 
-1. **Clone or Download** this repository.
+1. Just copy and paste the contents of script.ipynb into a Jupyter notebook. 
 2. **Install dependencies:**
    ```bash
    pip install undetected-chromedriver selenium
    ```
 3. **Run the script:**
-   ```bash
-   python3 extract_chatgpt_history.py
-   ```
-   
-   *Replace `extract_chatgpt_history.py` with the name of your script file if different.*
-
 4. **Login to ChatGPT:**
    - The script will open a Chrome browser window using `undetected_chromedriver`.
    - Go to the **History** section in ChatGPT.
